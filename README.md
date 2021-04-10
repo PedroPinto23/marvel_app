@@ -4,6 +4,6 @@ Flutter Developer - Sunday - Teste prático
 
 ## API utilizada: https://developer.marvel.com
 
-<p align="center">
-   <img src ='assets/images/screenshot.png' height = "300">
+<p align="left">
+   <img src ='assets/images/screenshot.png' height = "400">
 </p>
