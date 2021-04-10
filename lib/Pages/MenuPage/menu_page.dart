@@ -9,35 +9,35 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: Container(
-        margin: EdgeInsets.symmetric(horizontal: 8),
-        child: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              toolbarHeight: 200,
-              title: TitleWidget(),
-              centerTitle: true,
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(40),
+                bottomRight: Radius.circular(40),
+              ),
             ),
-            FutureBuilder<MarvelCharacters>(
-              future: FetchData().getCharacters(),
-              builder: (context, snapshot) {
-                if (!snapshot.hasData) {
-                  return SliverToBoxAdapter(child: LoadingWidget());
-                } else {
-                  final char = snapshot.data.data.results;
-                  return SliverGrid.count(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 5,
-                    mainAxisSpacing: 5,
-                    childAspectRatio: 2 / 3,
-                    children: char.map((e) => MenuPageTile(result: e)).toList(),
-                  );
-                }
-              },
-            )
-          ],
-        ),
+            toolbarHeight: 200,
+            title: TitleWidget(),
+            centerTitle: true,
+          ),
+          FutureBuilder<MarvelCharacters>(
+            future: FetchData().getCharacters(),
+            builder: (context, snapshot) {
+              if (!snapshot.hasData) {
+                return SliverToBoxAdapter(child: LoadingWidget());
+              } else {
+                final char = snapshot.data.data.results;
+                return SliverGrid.count(
+                  crossAxisCount: 3,
+                  childAspectRatio: 2 / 3,
+                  children: char.map((e) => MenuPageTile(result: e)).toList(),
+                );
+              }
+            },
+          )
+        ],
       ),
     );
   }

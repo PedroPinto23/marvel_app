@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:marvel_app/styles/styles.dart';
 
 class TitleWidget extends StatelessWidget {
   @override
@@ -13,7 +13,7 @@ class TitleWidget extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 5),
             child: Text(
               "Characters",
-              style: GoogleFonts.bubblegumSans(fontSize: 30),
+              style: CustomStyle().titleStyle(),
             ),
           ),
         ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:marvel_app/Pages/DetailsPage/details_page.dart';
 import 'package:marvel_app/models/char_results.dart';
+import 'package:marvel_app/styles/styles.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class MenuPageTile extends StatelessWidget {
@@ -17,15 +17,14 @@ class MenuPageTile extends StatelessWidget {
           builder: (context) => DetailsPage(
                 results: result,
               ))),
-      child: Card(
-        margin: EdgeInsets.zero,
-        color: Colors.black87,
+      child: Container(
+        margin: EdgeInsets.all(10),
         child: Stack(
           fit: StackFit.expand,
           alignment: Alignment.center,
           children: [
-            Container(
-              margin: EdgeInsets.all(10),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(15),
               child: FadeInImage.memoryNetwork(
                 fadeInCurve: Curves.fastOutSlowIn,
                 fit: BoxFit.cover,
@@ -41,11 +40,7 @@ class MenuPageTile extends StatelessWidget {
                 child: Text(
                   name[0],
                   textWidthBasis: TextWidthBasis.longestLine,
-                  style: GoogleFonts.bubblegumSans(
-                      color: Theme.of(context).primaryColor,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 1.2),
+                  style: CustomStyle().cardStyle(context),
                 ),
               ),
             )
