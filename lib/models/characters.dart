@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/data/char_data.dart';
+import 'package:marvel_app/models/char_data.dart';
 
 class MarvelCharacters {
   final int code;

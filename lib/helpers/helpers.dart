@@ -1,4 +1,4 @@
-import 'package:marvel_app/models/data/char_results.dart';
+import 'package:marvel_app/models/char_results.dart';
 
 String url(Results result) {
   final path = result.thumbnail.path;

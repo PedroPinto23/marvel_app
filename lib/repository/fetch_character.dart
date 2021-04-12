@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:global_configuration/global_configuration.dart';
 import 'package:http/http.dart' as http;
 import 'package:crypto/crypto.dart';
-import 'package:marvel_app/models/data/characters.dart';
+import 'package:marvel_app/models/characters.dart';
 import 'package:marvel_app/repository/marvel_api.dart';
 
 final marvel = FetchCharacter();

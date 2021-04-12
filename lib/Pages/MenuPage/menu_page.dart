@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:marvel_app/Pages/MenuPage/components/menu_page_tile.dart';
 import 'package:marvel_app/components/loading_widget.dart';
 import 'package:marvel_app/components/title_widget.dart';
-import 'package:marvel_app/models/data/characters.dart';
+import 'package:marvel_app/models/characters.dart';
 import 'package:marvel_app/repository/fetch_character.dart';
 
 class MenuPage extends StatelessWidget {

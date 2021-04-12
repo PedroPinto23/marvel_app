@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/data/char_results.dart';
+import 'package:marvel_app/models/char_results.dart';
 import 'package:marvel_app/helpers/helpers.dart';
 import 'package:transparent_image/transparent_image.dart';
 

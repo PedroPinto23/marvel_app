@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:marvel_app/models/data/char_comics.dart';
-import 'package:marvel_app/models/data/char_events.dart';
-import 'package:marvel_app/models/data/char_series.dart';
-import 'package:marvel_app/models/data/char_stories.dart';
-import 'package:marvel_app/models/data/char_urls.dart';
-import 'package:marvel_app/models/data/chat_thumbnail.dart';
+import 'package:marvel_app/models/char_comics.dart';
+import 'package:marvel_app/models/char_events.dart';
+import 'package:marvel_app/models/char_series.dart';
+import 'package:marvel_app/models/char_stories.dart';
+import 'package:marvel_app/models/char_urls.dart';
+import 'package:marvel_app/models/chat_thumbnail.dart';
 
 class Results {
   final int id;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/data/char_items.dart';
+import 'package:marvel_app/models/char_items.dart';
 
 class Series {
   final int available;

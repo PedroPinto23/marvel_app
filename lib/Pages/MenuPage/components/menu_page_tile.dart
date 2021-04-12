@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:marvel_app/Pages/DetailsPage/details_page.dart';
 import 'package:marvel_app/components/description_name.dart';
 import 'package:marvel_app/components/image_card.dart';
-import 'package:marvel_app/models/data/char_results.dart';
+import 'package:marvel_app/models/char_results.dart';
 import 'package:marvel_app/helpers/helpers.dart';
 
 class MenuPageTile extends StatelessWidget {

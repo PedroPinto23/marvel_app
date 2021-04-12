@@ -3,7 +3,7 @@ import 'package:marvel_app/Pages/DetailsPage/components/description.dart';
 import 'package:marvel_app/components/custom_backbutton.dart';
 import 'package:marvel_app/components/description_name.dart';
 import 'package:marvel_app/components/image_card.dart';
-import 'package:marvel_app/models/data/char_results.dart';
+import 'package:marvel_app/models/char_results.dart';
 
 class DetailsPage extends StatelessWidget {
   final Results result;
