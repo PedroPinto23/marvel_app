@@ -8,7 +8,9 @@ class LoadingWidget extends StatelessWidget {
       margin: EdgeInsets.only(top: 50),
       child: Center(
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+          valueColor: AlwaysStoppedAnimation<Color>(
+            customStyle.color(context),
+          ),
         ),
       ),
     );

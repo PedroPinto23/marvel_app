@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/char_results.dart';
+import 'package:marvel_app/models/data/char_results.dart';
 
 class Data {
   final int offset;

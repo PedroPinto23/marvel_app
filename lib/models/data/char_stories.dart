@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/char_items.dart';
+import 'package:marvel_app/models/data/char_items.dart';
 
 class Stories {
   final int available;
@@ -31,14 +31,4 @@ class Stories {
         "collectionURI": collectionURI,
         "items": items,
       };
-  //           "available": "int",
-//           "returned": "int",
-//           "collectionURI": "string",
-//           "items": [
-//             {
-//               "resourceURI": "string",
-//               "name": "string",
-//               "type": "string"
-//             }
-//           ]
 }

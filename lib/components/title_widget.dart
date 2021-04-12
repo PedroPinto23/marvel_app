@@ -13,7 +13,7 @@ class TitleWidget extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 5),
             child: Text(
               "Characters",
-              style: CustomStyle().titleStyle(),
+              style: customStyle.title(),
             ),
           ),
         ],

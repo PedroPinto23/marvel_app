@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/models/char_items.dart';
+import 'package:marvel_app/models/data/char_items.dart';
 
-class Series {
+class Events {
   final int available;
   final int returned;
   final String collectionURI;
   final List<Items> items;
 
-  Series({
+  Events({
     @required this.available,
     @required this.returned,
     @required this.collectionURI,
     @required this.items,
   });
 
-  factory Series.fromJSON(Map<String, dynamic> json) {
-    return Series(
+  factory Events.fromJSON(Map<String, dynamic> json) {
+    return Events(  
       available: json["available"],
       returned: json["returned"],
       collectionURI: json["collectionURI"],
